@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/expense_tracker
+    username: postgres
+    password: aditya4334
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    clean-on-validation-error: true
+    clean-disabled: false
+
+app:
+  jwt:
+    secret: 9a62827f86717548227b9c9f2b847a9f7d6e4b8a2c1f9d3b7a5e8c2d1b0a9f8e
+    expiration-ms: 86400000 # 24 hours
