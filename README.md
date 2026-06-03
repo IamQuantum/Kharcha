@@ -1,4 +1,4 @@
-# Quantum Expense: Personal Expense Tracker
+# Kharcha: Personal Expense Tracker
 
 A premium, full-stack personal finance dashboard designed to manage your ledger transactions, monitor monthly limits, and visualize budget velocities using custom interactive trajectory charts.
 
